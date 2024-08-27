@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Lwk
+import LiquidWalletKit
 
 struct ContentView: View {
     var body: some View {

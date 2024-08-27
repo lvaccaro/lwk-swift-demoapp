@@ -14,7 +14,7 @@
 		812A7C0E2C6BC25700EB2DD1 /* LWKDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812A7C0D2C6BC25700EB2DD1 /* LWKDemoTests.swift */; };
 		812A7C182C6BC25700EB2DD1 /* LWKDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812A7C172C6BC25700EB2DD1 /* LWKDemoUITests.swift */; };
 		812A7C1A2C6BC25700EB2DD1 /* LWKDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812A7C192C6BC25700EB2DD1 /* LWKDemoUITestsLaunchTests.swift */; };
-		815103532C7DB2B400A5611C /* Lwk in Frameworks */ = {isa = PBXBuildFile; productRef = 815103522C7DB2B400A5611C /* Lwk */; };
+		815103562C7DE42500A5611C /* LiquidWalletKit in Frameworks */ = {isa = PBXBuildFile; productRef = 815103552C7DE42500A5611C /* LiquidWalletKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				815103532C7DB2B400A5611C /* Lwk in Frameworks */,
+				815103562C7DE42500A5611C /* LiquidWalletKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +170,7 @@
 			);
 			name = LWKDemo;
 			packageProductDependencies = (
-				815103522C7DB2B400A5611C /* Lwk */,
+				815103552C7DE42500A5611C /* LiquidWalletKit */,
 			);
 			productName = LWKDemo;
 			productReference = 812A7BF82C6BC25500EB2DD1 /* LWKDemo.app */;
@@ -245,7 +245,7 @@
 			);
 			mainGroup = 812A7BEF2C6BC25500EB2DD1;
 			packageReferences = (
-				815103512C7DB2B400A5611C /* XCRemoteSwiftPackageReference "lwk-swift" */,
+				815103542C7DE42500A5611C /* XCRemoteSwiftPackageReference "lwk-swift1" */,
 			);
 			productRefGroup = 812A7BF92C6BC25500EB2DD1 /* Products */;
 			projectDirPath = "";
@@ -645,21 +645,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		815103512C7DB2B400A5611C /* XCRemoteSwiftPackageReference "lwk-swift" */ = {
+		815103542C7DE42500A5611C /* XCRemoteSwiftPackageReference "lwk-swift1" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/blockstream/lwk-swift";
+			repositoryURL = "https://github.com/lvaccaro/lwk-swift1";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = revision;
+				revision = 3c5143de2230564135449f02856ffedd6bd76795;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		815103522C7DB2B400A5611C /* Lwk */ = {
+		815103552C7DE42500A5611C /* LiquidWalletKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 815103512C7DB2B400A5611C /* XCRemoteSwiftPackageReference "lwk-swift" */;
-			productName = Lwk;
+			package = 815103542C7DE42500A5611C /* XCRemoteSwiftPackageReference "lwk-swift1" */;
+			productName = LiquidWalletKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
