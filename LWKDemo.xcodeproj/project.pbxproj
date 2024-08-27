@@ -14,6 +14,7 @@
 		812A7C0E2C6BC25700EB2DD1 /* LWKDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812A7C0D2C6BC25700EB2DD1 /* LWKDemoTests.swift */; };
 		812A7C182C6BC25700EB2DD1 /* LWKDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812A7C172C6BC25700EB2DD1 /* LWKDemoUITests.swift */; };
 		812A7C1A2C6BC25700EB2DD1 /* LWKDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812A7C192C6BC25700EB2DD1 /* LWKDemoUITestsLaunchTests.swift */; };
+		815103532C7DB2B400A5611C /* Lwk in Frameworks */ = {isa = PBXBuildFile; productRef = 815103522C7DB2B400A5611C /* Lwk */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,19 @@
 			remoteInfo = LWKDemo;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		812A7C782C6BEEC000EB2DD1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		812A7BF82C6BC25500EB2DD1 /* LWKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LWKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				815103532C7DB2B400A5611C /* Lwk in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +94,7 @@
 				812A7C0C2C6BC25700EB2DD1 /* LWKDemoTests */,
 				812A7C162C6BC25700EB2DD1 /* LWKDemoUITests */,
 				812A7BF92C6BC25500EB2DD1 /* Products */,
+				812A7C262C6BC27E00EB2DD1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +145,13 @@
 			path = LWKDemoUITests;
 			sourceTree = "<group>";
 		};
+		812A7C262C6BC27E00EB2DD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,12 +162,16 @@
 				812A7BF42C6BC25500EB2DD1 /* Sources */,
 				812A7BF52C6BC25500EB2DD1 /* Frameworks */,
 				812A7BF62C6BC25500EB2DD1 /* Resources */,
+				812A7C782C6BEEC000EB2DD1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = LWKDemo;
+			packageProductDependencies = (
+				815103522C7DB2B400A5611C /* Lwk */,
+			);
 			productName = LWKDemo;
 			productReference = 812A7BF82C6BC25500EB2DD1 /* LWKDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +244,9 @@
 				Base,
 			);
 			mainGroup = 812A7BEF2C6BC25500EB2DD1;
+			packageReferences = (
+				815103512C7DB2B400A5611C /* XCRemoteSwiftPackageReference "lwk-swift" */,
+			);
 			productRefGroup = 812A7BF92C6BC25500EB2DD1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -420,6 +450,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LWKDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = FFUUR7PUBR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -440,7 +471,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lvaccaro.LWKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,6 +488,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LWKDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = FFUUR7PUBR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -476,7 +509,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lvaccaro.LWKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -609,6 +643,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		815103512C7DB2B400A5611C /* XCRemoteSwiftPackageReference "lwk-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/blockstream/lwk-swift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		815103522C7DB2B400A5611C /* Lwk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 815103512C7DB2B400A5611C /* XCRemoteSwiftPackageReference "lwk-swift" */;
+			productName = Lwk;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 812A7BF02C6BC25500EB2DD1 /* Project object */;
 }
